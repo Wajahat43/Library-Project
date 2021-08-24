@@ -1,0 +1,174 @@
+.bookInputForm{
+    display: flex;
+    background-color:#ff9912;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 30rem;
+    margin: 20px 30% 20% 30%;
+    border-radius: 2%;
+    padding-top: 20px;  
+}
+
+.formControl{
+    text-align: left;
+    margin-bottom:25px;
+    width: 20rem;
+}
+
+.formControl input,
+.formControl select,
+.formControl textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+        font-size: 15px;
+}
+
+.formControl label{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.formControl input[type="radio"]{
+    display: inline-block;
+    width: auto;
+}
+
+
+
+button{
+    display:inline-block;
+    padding:0.9em 0.5em;
+    margin:0 4em 1em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:white;
+    background-color: #2196F3;
+    text-align:center;
+    font-size: 15px;  
+    border-radius: 70px;  
+}
+
+button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    transform: scale(1.1);
+}
+
+
+
+#readStatus{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* This css is for toggle button 
+//
+//
+//
+//
+*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*This css is for model*/
+  /* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+ 
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+

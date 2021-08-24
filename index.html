@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="myJs.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Library</h1>
+    
+   <button type="button" id="addNewBookButton">Add new book</button>
+
+    <div id="myModal" class="modal">
+
+        <form action="" class="bookInputForm">
+
+            <div class="formControl">
+                <label for="bookTitle">Book Title*</label>
+                <input type="text" placeholder="Enter Book title" id="bookTitle" >
+            </div>
+
+            <div class="formControl">
+                <label for="authorName">Author Name*</label>
+                <input type="text" placeholder="Name of the Author" id="authorName" >
+            </div>
+
+            <div class="formControl">
+                <label for="pages">Pages in the book*</label>
+                <input type="text" placeholder="Number of Pages in the book" id="pages" >
+            </div>
+
+            <div class="formControl" id="readStatus">
+                <label for="readStatus">Have You read the book? <br></label>
+                <label class="switch">
+                    <input type="checkbox" id="readStatusToggle" >
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="formControl">
+                <button type="submit" id="submitBook">Add Book</button>
+                <button type="submit" id="cancel"> cancel</canvas></button>
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+    <div class="libraryContainer">
+
+
+
+    </div>
+
+</body>
+
+</html>
