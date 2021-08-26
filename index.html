@@ -13,11 +13,11 @@
 
     <div id="myModal" class="modal">
 
-        <form action="" class="bookInputForm">
+        <form action="" class="bookInputForm" onsubmit="return false">
 
             <div class="formControl">
                 <label for="bookTitle">Book Title*</label>
-                <input type="text" placeholder="Enter Book title" id="bookTitle" >
+                <input type="text" placeholder="Enter Book title" id="bookTitle">
             </div>
 
             <div class="formControl">
@@ -33,7 +33,7 @@
             <div class="formControl" id="readStatus">
                 <label for="readStatus">Have You read the book? <br></label>
                 <label class="switch">
-                    <input type="checkbox" id="readStatusToggle" >
+                    <input type="checkbox" id="readStatusToggle">
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -49,11 +49,22 @@
 
     </div>
 
-    <div class="libraryContainer">
+    <div class="bookFieldset">
 
-
+        <fieldset class="bookFieldSet">
+            <Legend>Books in the Library</Legend>
+    
+            <div class="bookBox">
+    
+    
+    
+            </div>
+    
+        </fieldset>
+      
 
     </div>
+    
 
 </body>
 

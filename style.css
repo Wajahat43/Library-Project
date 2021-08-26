@@ -1,3 +1,7 @@
+body{
+  background-color: white;
+}
+
 .bookInputForm{
     display: flex;
     background-color:#ff9912;
@@ -58,7 +62,7 @@ button{
 
 button:hover{
     color:#000000;
-    background-color:#FFFFFF;
+    background-color:white;
     transform: scale(1.1);
 }
 
@@ -68,6 +72,58 @@ button:hover{
     display: flex;
     justify-content: space-between;
 }
+
+.bookFieldSet{
+  margin: .7rem 3rem 3rem 3rem;
+}
+.bookBox{
+  /* display: flex;
+  flex-wrap:wrap;
+  
+  gap:10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: .7rem;
+  row-gap: .7rem;
+}
+
+.bookCard{
+
+  border:2px solid #2196f3;
+  padding: 10px;
+  
+  
+}
+
+.bookCard >h2{
+  text-align: center;
+}
+
+.bookCardButtonContainer{
+  display: flex;
+}
+
+.bookCardButton{
+  display:inline-block;
+  padding:0.9em 0.23em;
+  margin:0 3em 1em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:white;
+  background-color: #2196F3;
+  text-align:center;
+  font-size: 15px;  
+  border-radius: 1rem;  
+}
+
+.bookCardButton:hover{
+  color:#000000;
+  background-color:white;
+  transform: scale(1.1);
+}
+
 
 /* This css is for toggle button 
 //
