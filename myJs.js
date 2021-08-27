@@ -165,6 +165,7 @@ function ShowBook(book) {
 function loadLocalLibrary() {
     if (localLibrary === null || localLibrary.length ===0){
         displayNoBooksMessage();
+        return;
     }
         
     localLibrary.forEach(element => {
