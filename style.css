@@ -2,6 +2,23 @@ body{
   background-color: white;
 }
 
+h1{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+.header{
+  background-color: #ff9912;
+  padding-bottom: .1rem;
+  margin-top: 0px;
+}
+
+#addNewBookButton{
+  display: block;
+  margin: 10px auto 20px auto;
+}
+
 .bookInputForm{
     display: flex;
     background-color:#ff9912;

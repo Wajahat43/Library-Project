@@ -15,6 +15,7 @@ function Book(title, authorName, pages, readStatus) {
 
 
 function addBookToLibrary(newBook) {
+    removeNoBooksMessage();
     myLibrary.push(newBook);
     ShowBook(newBook);
     updateLocalLibrary();
@@ -43,6 +44,7 @@ window.addEventListener("click", function (event) {
 })
 
 function removeBook(id) {
+
     let removeIndex = parseInt(id);
     myLibrary.splice(removeIndex, 1);
 
@@ -50,6 +52,10 @@ function removeBook(id) {
     libraryContainer.removeChild(bookToRemove);
 
     updateLocalLibrary();
+
+    if(myLibrary.length ===0){
+        displayNoBooksMessage();
+    }
 
 }
 
@@ -76,6 +82,19 @@ function getNewBookdata() {
 
     let newBook = new Book(bookTitle, authorName, pages, readStatus);
     return newBook;
+}
+
+function displayNoBooksMessage(){
+    let noBooks = document.createElement("h3");
+        noBooks.textContent = `There are no Books in the library`;
+        noBooks.setAttribute("id","noBooksMessage");
+        libraryContainer.appendChild(noBooks);
+}
+
+function removeNoBooksMessage(){
+        let noBooks = document.getElementById('noBooksMessage');
+        if(noBooks != undefined)
+            libraryContainer.removeChild(noBooks);
 }
 
 function ShowBook(book) {
@@ -141,9 +160,13 @@ function ShowBook(book) {
 
 }
 
+
+
 function loadLocalLibrary() {
-    if (!localLibrary)
-        return;
+    if (localLibrary.length ===0){
+        displayNoBooksMessage();
+    }
+        
     localLibrary.forEach(element => {
         addBookToLibrary(element)
     });
