@@ -163,7 +163,7 @@ function ShowBook(book) {
 
 
 function loadLocalLibrary() {
-    if (localLibrary.length ===0){
+    if (localLibrary === null || localLibrary.length ===0){
         displayNoBooksMessage();
     }
         
